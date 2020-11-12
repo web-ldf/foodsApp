@@ -1,0 +1,86 @@
+/* pages/orderForm/orderForm.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.orderForm{
+  height: 164rpx;
+  background-color: #fff;
+  margin-bottom: 18rpx;
+}
+.orderForm-text{
+  text-align: center;
+  font-size: 40rpx;
+  font-family: "微软雅黑";
+  font-weight: 600;
+  height: 82rpx;
+  line-height: 82rpx;
+}
+.orderForm-nav{
+  display: flex;
+  justify-content: space-around;
+  height: 82rpx;
+  line-height: 82rpx;
+  color: #9f9f9f;
+}
+.orderForm-all{
+  font-weight: 700;
+  color: #000;
+  border-bottom:2px solid #ff9f00;
+}
+.orderForm-container{
+  height: 300rpx;
+  padding: 22rpx 16rpx;
+  margin-bottom: 18rpx;
+  background-color: #fff;
+}
+.content{
+  border-bottom: 1px solid #ccc;
+}
+.content-top{
+  display: flex;
+}
+.content-top-image image{
+  width: 60px;
+}
+.content-intro{
+  margin-left: 30rpx;
+}
+.content-intro-text{
+  font-size: 22px;
+  margin-bottom: 12rpx;
+  font-weight: 700;
+}
+.content-intro-date{
+  color: #a6a6a6;
+}
+.content-number{
+  padding: 24rpx 0;
+}
+.orderForm-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: center;
+  padding:26rpx 0;
+}
+.orderForm-appraise,.orderForm-pay{
+  border: 2px solid #817d7a;
+  text-align: center;
+  height: 20px;
+  padding: 8rpx;
+  padding-left: 10px;
+  width: 38px;
+  display: flex;
+  margin-right: 34rpx;
+  border-radius: 4px;
+  align-items: center;
+}
+.orderForm-pay{
+  width: 74px;
+  height: 24px;
+  background-color: #ffa208;
+  color: white;
+  border: 0;
+  padding-left: 22rpx;
+}

@@ -1,0 +1,199 @@
+page{
+  background-color: #f2f2f2;
+}
+.foots-bg-Color{
+  background-color: #fff;
+  width: 750rpx;
+  height: 329rpx;
+}
+.borderRadius{
+  background-color: #ffc158;
+  height: 230rpx;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.footsHeader{
+  height: 82rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15rpx;
+  background-color: #ffc158;
+}
+.address{
+  width: 124rpx;
+  height: 58rpx;
+  border-radius: 15px;
+  background-color: #ffce7d;
+  line-height: 58rpx;
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-place{
+  font-family:"微软雅黑";
+  color:white;
+  font-size: 12px;
+}
+.address-image image{
+  width: 12px;
+  height: 12px;
+  margin-left: 10rpx;
+}
+.search{
+  width: 470rpx;
+  height: 58rpx;
+  background-color: #ffce7d;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-image image{
+  width:28rpx;
+  height: 25rpx;
+}
+.search-image{
+  margin-right: 20rpx;
+}
+.search input{
+  padding: 8rpx 20rpx;
+  font-size: 14px;
+  color: #fff;
+}
+.pgcolor{
+  color: #fff;
+}
+.message{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 100%;
+  background-color: #ffce7d;
+  margin-right: 30rpx;
+}
+.message image{
+  width: 40rpx;
+  height: 40rpx;
+  padding:10rpx;
+}
+/* swiper部分样式 */
+.swiper-container{
+  margin-bottom: 34rpx;
+}
+.swiper{
+  height: 310rpx;
+}
+.swiper image{
+  width:690rpx;
+  height:310rpx;
+  margin-left: 30rpx;
+  border-radius: 10rpx;
+}
+.foods-selected{
+  padding-top: 77rpx;
+  height:342rpx;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.foods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:690rpx;
+}
+.foods-item{
+    float: left;
+    width: 25%;
+    min-width: 25%; 
+    max-width: 25%;
+    text-align: center;
+    margin-top: 32rpx;
+}
+.foods-item-image image{
+   width: 90rpx;
+   height: 90rpx;
+}
+.foods-item-text{
+  font-size: 12px;
+  font-family:"华文中宋";
+}
+.dayAdvice{
+  padding-left: 32rpx;
+  margin-top: 22rpx;
+  font-family:"华文中宋";
+  background-color: #fff;
+}
+.dayAdvice-text{
+  font-size: 26px;
+  height: 94rpx;
+  font-weight: bold;
+  line-height: 94rpx;
+}
+.advice-menu{
+  display: flex;
+  height: 50rpx;
+}
+.menu-order{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-order-text{
+  margin-right: 10rpx;
+}
+.menu-order image{
+  width:28rpx;
+  margin-bottom: 2px;
+}
+.menu-sales,.menu-distance{
+  margin-left: 44rpx;
+  line-height: 50rpx;
+}
+.menu-choose{
+  margin-left: 220rpx;
+}
+.everyday-content{
+  height: 150px;
+}
+.everyday-content-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 150rpx;
+  background-color: #fff;
+}
+.everyday-content-item-image image{
+  width: 128rpx;
+  height: 124rpx;
+}
+.everyday-content-item-intro{
+  margin-left: 40rpx;
+}
+.everyday-content-item-bottom{
+  display: flex;
+  width: 508rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.everyday-content-item-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.everyday-content-item-address{
+  color: #d1d1d1;
+  font-size:26rpx;
+}
+.price{
+  color: red;
+  font-size: 22px;
+}
+.everyday-content-item-sales{
+  color: #d1d1d1;
+  align-items: flex-end;
+}
+.pop{
+  height: 20px;
+  border: 1px solid red;
+}

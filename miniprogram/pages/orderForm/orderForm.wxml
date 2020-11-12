@@ -1,0 +1,48 @@
+<!-- 订单顶部开始 -->
+<view class="orderForm">
+  <view class="orderForm-text">订单</view>
+  <view class="orderForm-nav">
+      <view class="orderForm-all">全部</view>
+      <view bindtap="pay">待付款</view>
+      <view>待配送</view>
+      <view>已完成</view>
+      <view>已失效</view>
+  </view>
+</view>
+<!-- 订单顶部结束 -->
+<!-- 订单内容开始 -->
+<view class="orderForm-container">
+   <view class="content">
+     <view class="content-top">
+       <view class="content-top-image"><image mode="widthFix" src="/images/rice.png"></image></view>
+       <view class="content-intro">
+         <view class="content-intro-text">阳城大闸蟹</view>
+         <view class="content-intro-date">2019-3-18 19:23</view>
+         <view class="content-number">米饭x1等8件商品</view>
+       </view>
+     </view>
+   </view>
+   <view class="orderForm-bottom">
+     <view class="orderForm-appraise">评价</view>
+     <view class="orderForm-pay">等待支付</view>
+   </view>
+</view>
+<!-- 订单内容结束 -->
+<!-- 订单内容开始 -->
+<view class="orderForm-container" >
+   <view class="content">
+     <view class="content-top">
+       <view class="content-top-image"><image mode="widthFix" src="/images/rice.png"></image></view>
+       <view class="content-intro">
+         <view class="content-intro-text">阳城大闸蟹</view>
+         <view class="content-intro-date">2019-3-18 19:23</view>
+         <view class="content-number">米饭x1等8件商品</view>
+       </view>
+     </view>
+   </view>
+   <view class="orderForm-bottom">
+     <view class="orderForm-appraise">评价</view>
+     <view class="orderForm-pay">等待支付</view>
+   </view>
+</view>
+<!-- 订单内容结束 -->

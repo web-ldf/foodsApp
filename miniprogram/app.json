@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/orderForm/orderForm"
+  ],
+  "window": {
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff9f00",
+    "navigationBarTitleText": "美食小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#fabb52",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index_disabled.png",
+      "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/orderForm/orderForm",
+        "text": "订单",
+        "iconPath": "images/orderForm_disabled.png",
+        "selectedIconPath": "images/orderForm.png"
+        },
+        {
+          "pagePath": "pages/me/me",
+          "text": "我的",
+          "iconPath": "images/mine_disabled.png",
+          "selectedIconPath": "images/mine.png"
+        }
+    ]
+  },
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index"
+  }
+}

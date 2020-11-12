@@ -1,0 +1,119 @@
+/* pages/me/me.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.mine-top{
+  background-color:#ffc158;
+}
+.mine-color{
+  background-color:#ffc158 !important;
+  padding-bottom: 124rpx;
+}
+.mine-text{
+  color: white !important;
+  font-weight: 600 !important;
+}
+.me-left,.me-right{
+  border-radius: 100%;
+  background-color: #ffce7d;
+  padding:10rpx 10rpx;
+}
+.me-right{
+  font-size: 19px;
+}
+.borderRadius{
+  height:440rpx;
+  max-width: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: #fff;
+}
+.user-container-top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userHead image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 100%;
+  position: relative;
+  margin-top: -88rpx;
+  z-index: 2;
+  background-color: #dcdcdc;
+}
+.user-name{
+  margin-top: 20rpx;
+  text-align: center;
+}
+.user-city{
+  margin-top: 20rpx;
+  color:#dcdcdc;
+  text-align: center;
+}
+.user-item-bottom{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 64rpx;
+}
+.user-item-bottom-image{
+  flex-direction: column;
+  text-align: center;
+}
+.user-item-bottom-image image{
+  width: 35rpx;
+  height: 35rpx;
+  margin-bottom: 25rpx;
+}
+.bottom-container{
+  margin-top: 24rpx;
+  height: 150rpx;
+}
+.cell-distance{
+  padding:30rpx !important;
+}
+.cell-item{
+  margin-left: 12rpx;
+}
+/* 获取用户登录权限css */
+.headView{
+  margin: 90rpx 50rpx 90rpx 50rpx; /*上右下左*/
+  flex-direction: column;
+}
+.headImageView{
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  margin-right: 50rpx;
+  margin-bottom: 0px;
+  height: 100rpx;
+  justify-content: center;
+}
+.headImage{
+  display: flex;
+  width: 140rpx;
+  height: 140rpx;
+}
+.titleText{
+  margin-left: 50rpx;
+  margin-top:50rpx;
+  margin-bottom: 10px;
+  font-size: 28rpx;
+  color:#020e0f;
+  text-align: center;
+}
+.contentText{
+  margin-left: 50rpx;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+.authBtn{
+  margin-top:70rpx; 
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  height: 90rpx;
+  font-size: 35rpx;
+}
