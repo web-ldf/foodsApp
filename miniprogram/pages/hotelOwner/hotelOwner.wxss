@@ -1,0 +1,110 @@
+/* pages/details/details.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.dayAdvice{
+  padding:0 28rpx;
+  margin-top: 22rpx;
+  font-family:"华文中宋";
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.dayAdvice-text{
+  font-size: 26px;
+  height: 94rpx;
+  font-weight: bold;
+  line-height: 94rpx;
+}
+.advice-menu{
+  display: flex;
+  height: 50rpx;
+}
+.menu-order{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-order-text{
+  margin-right: 10rpx;
+}
+.menu-order image{
+  width:28rpx;
+  margin-bottom: 2px;
+}
+.menu-sales,.menu-distance{
+  margin-left: 44rpx;
+  line-height: 50rpx;
+}
+.menu-choose{
+  margin-left: 204rpx;
+}
+.everyday-content-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 150rpx;
+  background-color: #fff;
+}
+.everyday-content-item-image image{
+  width: 128rpx;
+  height: 124rpx;
+  border-radius: 15rpx;
+}
+.everyday-content-item-intro{
+  margin-left: 40rpx;
+}
+.everyday-content-item-bottom{
+  display: flex;
+  width: 508rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.everyday-content-item-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.everyday-content-item-address{
+  color: #d1d1d1;
+  font-size:26rpx;
+}
+.describe{
+  font-size: 28rpx;
+  color: 	#EE6363;
+  padding: 4rpx;
+}
+.everyday-content-item-sales{
+  align-items: flex-end;
+  background-color: 	#FFD700;
+  border-top-left-radius: 25rpx;
+  border-bottom-right-radius: 25rpx;
+  font-size: 32rpx;
+}
+
+/* 搜索区域 */
+.search{
+  height: 58rpx;
+  background-color: #D3D3D3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:15rpx 32rpx;
+}
+.search view{
+  width: 100%;
+}
+.search-image image{
+  width:28rpx;
+  height: 25rpx;
+}
+.search-image{
+  margin-right: 20rpx;
+}
+.search input{
+  padding: 8rpx 20rpx;
+  font-size: 14px;
+  color: #fff;
+}
+.pgcolor{
+  color: #fff;
+}

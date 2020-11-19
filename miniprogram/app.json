@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/details/details",
     "pages/index/index",
-    "pages/me/me",
+    "pages/hotelOwner/hotelOwner",
     "pages/login/login",
+    "pages/me/me",
     "pages/orderForm/orderForm"
   ],
   "window": {

@@ -3,16 +3,12 @@
 <!-- 美食搜索头部开始 -->
 <view class="footsHeader">
    <view class="address" bind:tap="showPopup">
-      <view class="address-place" >重庆</view>
+      <view class="address-place" >{{address}}</view>
       <view class="address-image"><image src="/images/fanhui.png"></image></view>
    </view>
     <!-- 弹出层，用于选择地点 -->
-   <van-popup
-      show="{{ show }}"
-      position="top"
-      closeable
-      custom-style="height: 40%;"
-      bind:close="onClose">
+    <van-popup show="{{show}}" position="top" custom-style="height: 30%;" style="z-index: 10000000">
+    <van-area area-list="{{ areaList }}" value="510521" item-height="33" columns-num="{{3}}" confirm-button-text="确定" cancel-button-text="重置" columns-placeholder="{{['省', '市', '区']}}" bind:confirm="confirm" bind:cancel="cancel"/>
     </van-popup>
    <view class="search">
       <view><input type="text" 
@@ -48,38 +44,10 @@
 <view class="foods-selected">
   <!-- 食品选项开始 -->
   <view class="foods">
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/meishi.png"></image></view>
-       <view class="foods-item-text">美食</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/chaoshi.png"></image></view>
-       <view class="foods-item-text">超市</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/shuiguo.png"></image></view>
-       <view class="foods-item-text">水果</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/yinpin.png"></image></view>
-       <view class="foods-item-text">饮品</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/yexiao.png"></image></view>
-       <view class="foods-item-text">夜宵</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/zaocan.png"></image></view>
-       <view class="foods-item-text">早餐</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/tiandian.png"></image></view>
-       <view class="foods-item-text">甜点</view>
-     </view>
-     <view class="foods-item">
-       <view class="foods-item-image"><image src="/images/tese.png"></image></view>
-       <view class="foods-item-text">特色</view>
-     </view>
+     <navigator url="/pages/hotelOwner/hotelOwner?_id={{item._id}}&categoryName={{item.categoryName}}" class="foods-item" wx:for="{{category}}" wx:key="index">
+       <view class="foods-item-image"><image src="{{item.pics}}"></image></view>
+       <view class="foods-item-text">{{item.categoryName}}</view>
+     </navigator>
   </view>
   <!-- 食品选项结束 -->
 </view>

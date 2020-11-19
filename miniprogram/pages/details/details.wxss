@@ -1,0 +1,83 @@
+page{
+  background-color: #f2f2f2;
+}
+.mine-top{
+  background-color:#f2f2f2;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  height: 550rpx;
+}
+.mine-color{
+  background-color:#ffc158 !important;
+  padding-bottom: 48rpx;
+}
+.mine-text{
+  color: white !important;
+  font-weight: 600 !important;
+}
+.me-left,.me-right{
+  border-radius: 100%;
+  background-color: #ffce7d;
+  padding:10rpx 10rpx;
+}
+.me-right{
+  font-size: 19px;
+}
+.borderRadius{
+  height:165rpx;
+  max-width: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: #ffc158;
+}
+.userHead{
+  display: flex;
+  justify-content: center;
+}
+.userHead image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 10%;
+  position: relative;
+  margin-top: 70rpx;
+  z-index: 2;
+  background-color: #dcdcdc;
+}
+.user-container-top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.user-name{
+  margin-top: 20rpx;
+  text-align: center;
+}
+.user-city{
+  margin-top: 20rpx;
+  color:#dcdcdc;
+  text-align: center;
+}
+.user-item-bottom{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 64rpx;
+}
+.user-item-bottom-image{
+  flex-direction: column;
+  text-align: center;
+}
+.user-item-bottom-image image{
+  width: 35rpx;
+  height: 35rpx;
+  margin-bottom: 25rpx;
+}
+.bottom-container{
+  margin-top: 24rpx;
+  height: 150rpx;
+}
+.cell-distance{
+  padding:30rpx !important;
+}
+.cell-item{
+  margin-left: 12rpx;
+}

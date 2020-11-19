@@ -1,0 +1,63 @@
+<!--pages/details/details.wxml-->
+<!-- 商家搜索搜索区域开始 -->
+<view class="search">
+      <view><input type="text" 
+             placeholder="搜索您想要的商家或商品名称" 
+             placeholder-class="pgcolor"
+             /></view>
+      <navigator class="search-image"><image src="/images/search.png"></image></navigator>
+   </view>
+<!-- 商家搜索区域结束 -->
+<!-- 每日推荐 -->
+<view class="dayAdvice">
+  <view class="dayAdvice-text">美食</view>
+  <!-- 商家推荐筛选部分开始 -->
+  <view class="advice-menu">
+     <view class="menu-order">
+        <view class="menu-order-text">综合排序</view> 
+        <view class="menu-order-image"><image mode="widthFix" src="/images/order.png"></image></view>
+      </view>
+     <view class="menu-sales">销量</view>
+     <view class="menu-distance">距离</view>
+     <view class="menu-choose">筛选</view>
+  </view>
+  <!-- 商家推荐内容部分开始 -->
+  <view class="everyday-content">
+    <navigator class="everyday-content-item" url="/pages/details/details">
+       <view class="everyday-content-item-image"><image src="/images/xiangduowei2.jpg"></image></view>
+       <view class="everyday-content-item-intro">
+          <view class="everyday-content-item-title">享多味汉堡店</view>
+          <view class="everyday-content-item-address">首单减5，支持自取</view>
+          <view class="everyday-content-item-bottom">
+            <view class="describe">第二次买，还会有优惠</view>
+            <view class="everyday-content-item-sales">美团专送</view>
+          </view>
+       </view>
+    </navigator>
+    <view class="everyday-content-item">
+       <view class="everyday-content-item-image"><image src="/images/xiangduowei2.jpg"></image></view>
+       <view class="everyday-content-item-intro">
+          <view class="everyday-content-item-title">享多味汉堡店</view>
+          <view class="everyday-content-item-address">首单减5，支持自取</view>
+          <view class="everyday-content-item-bottom">
+            <view class="describe">第二次买，还会有优惠</view>
+            <view class="everyday-content-item-sales">美团专送</view>
+          </view>
+       </view>
+    </view>
+    <view class="everyday-content-item">
+       <view class="everyday-content-item-image"><image src="/images/xiangduowei2.jpg"></image></view>
+       <view class="everyday-content-item-intro">
+          <view class="everyday-content-item-title">享多味汉堡店</view>
+          <view class="everyday-content-item-address">首单减5，支持自取</view>
+          <view class="everyday-content-item-bottom">
+            <view class="describe">第二次买，还会有优惠</view>
+            <view class="everyday-content-item-sales">美团专送</view>
+          </view>
+       </view>
+    </view>
+  </view>
+  <!-- 商家推荐内容部分结束 -->
+</view>
+
+

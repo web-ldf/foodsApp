@@ -33,6 +33,10 @@ page{
   display: flex;
   justify-content: center;
 }
+.userHead{
+  display: flex;
+  justify-content: center;
+}
 .userHead image{
   width: 180rpx;
   height: 180rpx;

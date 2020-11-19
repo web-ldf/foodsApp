@@ -39,7 +39,7 @@ page{
 .address-image image{
   width: 12px;
   height: 12px;
-  margin-left: 10rpx;
+  margin-left: 4rpx;
 }
 .search{
   width: 470rpx;

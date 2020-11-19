@@ -1,18 +1,34 @@
-// pages/login/login.js
+// pages/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    //店家数据
+     hotelOwnerData:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that=this;
+    console.log(options);
+    var db=wx.cloud.database();
+    let collection=db.collection("hotelOwner");
+    collection.
+    where({
+      categoryId:db.command.eq(options._id)
+    }).
+    get({
+      success:res=>{
+        that.setData({
+          hotelOwnerData:res.data
+        })
+        console.log(that.data.hotelOwnerData);
+      }
+    })
   },
 
   /**

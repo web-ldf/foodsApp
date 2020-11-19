@@ -1,0 +1,21 @@
+<view class="mine">
+   <view class="mine-top" >
+      <van-nav-bar title="店家信息" custom-class="mine-color"
+      title-class="mine-text" safe-area-inset-top="{{false}}" border="{{false}}">
+      </van-nav-bar>
+   <view class="borderRadius">
+   <!-- 头像部分开始 -->
+      <view class="user-container-top">
+         <view class="user-item-top">
+            <view class="userHead"><image src="{{userInfo.avatarUrl}}"></image></view>
+            <view class="user-name">重庆麻辣大火锅</view>
+            <view class="user-city">月销8900 配送约30分钟</view>
+         </view>
+      </view>
+   </view>
+  </view>
+  </view>
+  <!-- 店家商品信息部分 -->
+  <view class="hotelOwner-content">
+     <view>商品</view>
+  </view>
