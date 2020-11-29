@@ -197,3 +197,12 @@ page{
   height: 20px;
   border: 1px solid red;
 }
+.rate{
+  display: flex;
+  align-items: center;
+}
+.rateNum{
+  margin-left: 16rpx;
+  font-size: 26rpx;
+  color: Gray;
+}

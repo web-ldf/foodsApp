@@ -2,14 +2,16 @@
    <view class="mine-top" >
       <van-nav-bar title="店家信息" custom-class="mine-color"
       title-class="mine-text" safe-area-inset-top="{{false}}" border="{{false}}">
+      <van-icon name="arrow-left" bind:click="back" custom-class="me-left" slot="left" color="white" size="40rpx"/>
+      <van-icon name="star-o" custom-class="me-right" color="white" slot="right" size="40rpx"/>
       </van-nav-bar>
    <view class="borderRadius">
    <!-- 头像部分开始 -->
       <view class="user-container-top">
          <view class="user-item-top">
-            <view class="userHead"><image src="{{userInfo.avatarUrl}}"></image></view>
-            <view class="user-name">重庆麻辣大火锅</view>
-            <view class="user-city">月销8900 配送约30分钟</view>
+            <view class="userHead"><image src="{{hotelOwnerMessage.pics}}"></image></view>
+            <view class="user-name">{{hotelOwnerMessage.storeName}}</view>
+            <view class="user-city">{{hotelOwnerMessage.describe}}</view>
          </view>
       </view>
    </view>
@@ -17,5 +19,33 @@
   </view>
   <!-- 店家商品信息部分 -->
   <view class="hotelOwner-content">
-     <view>商品</view>
+     <view class="hotelOwner-content-foods">商品</view>
+     <view>评价</view>
+     <view>商家</view>
+  </view>
+  <!-- 这儿是单击商品显示的地方，默认是商品加载 -->
+  <view class="choose">
+       <van-tree-select
+  items="{{ items }}"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  max="{{ max }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem">
+   <view slot="content" wx:for="{{foodCategory}}" wx:if="{{item.foodCategory==mainActiveIndex}}">
+    <view class="everyday-content-item">
+       <view class="everyday-content-item-image"><image src="{{item.foodPic}}"></image></view>
+       <view class="everyday-content-item-intro">
+          <view class="everyday-content-item-title">{{item.foodName}}</view>
+          <view class="everyday-content-item-sales">月销:{{item.saleNum}}</view>
+          <view class="everyday-content-item-bottom">
+            <view class="price">￥{{item.price}}</view>
+            <view class="add">
+               <van-icon name="plus" color="white"/>
+            </view>
+          </view>
+       </view>
+    </view>
+  </view>
+</van-tree-select>
   </view>

@@ -6,13 +6,18 @@ Page({
    */
   data: {
     //店家数据
-     hotelOwnerData:{}
+     hotelOwnerData:{},
+     categoryName:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //接收传来的参数id和名字(比如美食的id和名字，超市的id和名字等)
+    this.setData({
+      categoryName:options
+    })
     var that=this;
     console.log(options);
     var db=wx.cloud.database();

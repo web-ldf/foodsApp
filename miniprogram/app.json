@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/details/details",
     "pages/index/index",
+    "pages/details/details",
     "pages/hotelOwner/hotelOwner",
     "pages/login/login",
     "pages/me/me",
@@ -48,6 +48,8 @@
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-area": "@vant/weapp/area/index",
-    "van-popup": "@vant/weapp/popup/index"
+    "van-popup": "@vant/weapp/popup/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-rate": "@vant/weapp/rate/index"
   }
 }

@@ -29,9 +29,9 @@
           indicator-active-color="#ffc056"
           circular="true"
   >
-     <swiper-item><navigator url="#"><image src="/images/banner1.jpg"></image></navigator></swiper-item>
+     <swiper-item><navigator url="/pages/details/details?foodId=3"><image src="/images/banner1.jpg"></image></navigator></swiper-item>
      <swiper-item><navigator><image src="/images/banner2.jpg"></image></navigator></swiper-item>
-     <swiper-item><navigator><image src="/images/banner3.jpg"></image></navigator></swiper-item>
+     <swiper-item><navigator url="/pages/details/details?foodId=2"><image src="/images/banner3.jpg"></image></navigator></swiper-item>
   </swiper>
 </view>
 </view>
@@ -68,28 +68,26 @@
   <!-- 每日推荐菜单部分结束 -->
   <!-- 每日推荐内容部分开始 -->
   <view class="everyday-content">
-    <view class="everyday-content-item">
-       <view class="everyday-content-item-image"><image src="/images/rice.png"></image></view>
+    <navigator class="everyday-content-item" wx:for="{{recommend}}" wx:key="index" url="/pages/details/details?foodId={{item._id}}">
+       <view class="everyday-content-item-image"><image src="{{item.foodPic}}"></image></view>
        <view class="everyday-content-item-intro">
-          <view class="everyday-content-item-title">红烧蛋炒饭</view>
-          <view class="everyday-content-item-address">中餐|宜宾万达广场</view>
+          <view class="everyday-content-item-title">{{item.foodName}}</view>
+          <view class="rate">
+          <van-rate 
+          readonly
+          size="{{ 12 }}"
+          color="#ffce7d"
+          void-color="#eee"
+          void-icon="star" 
+          value="{{item.Rate}}" />
+          <view class="rateNum">{{item.Rate}}分</view>
+         </view>
           <view class="everyday-content-item-bottom">
-            <view class="price">￥26</view>
-            <view class="everyday-content-item-sales">月销76</view>
+            <view class="price">￥{{item.price}}</view>
+            <view class="everyday-content-item-sales">月售:{{item.saleNum}}</view>
           </view>
        </view>
-    </view>
-    <view class="everyday-content-item">
-       <view class="everyday-content-item-image"><image src="/images/rice.png"></image></view>
-       <view class="everyday-content-item-intro">
-          <view class="everyday-content-item-title">红烧蛋炒饭</view>
-          <view class="everyday-content-item-address">中餐|宜宾万达广场</view>
-          <view class="everyday-content-item-bottom">
-            <view class="price">￥26</view>
-            <view class="everyday-content-item-sales">月销76</view>
-          </view>
-       </view>
-    </view>
+    </navigator>
   </view>
   <!-- 每日推荐内容部分结束 -->
 </view>

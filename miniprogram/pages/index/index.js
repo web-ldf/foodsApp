@@ -8,7 +8,9 @@ Page({
       areaList: {},
       address:'泸县',
       //存放美食分类的数据
-      category:{}
+      category:{},
+      //首页每日推荐的数据
+      recommend:[]
   },
   showPopup() {
     this.setData({ show: true });
@@ -45,6 +47,43 @@ Page({
           category:res.data
         })
         console.log(this.data.category);
+      }
+    });
+    //这里加载所有的美食的图片及详情
+    var db=wx.cloud.database();
+    var collection=db.collection("hotelOwner");
+    collection
+    .get({
+      success:res=>{
+        //定义一个每日推荐变量，把这些数据封装到一个数据集中
+        let recommend=[];
+        for(var i=0;i<res.data.length;i++){
+          for(var j=0;j<res.data[i].foods.length;j++){
+             recommend.push(res.data[i].foods[j]);
+             //console.log(res.data[i].foods[j]);
+          }
+        }
+        //不知道原理，只知道网上搜的数组对象中的排序方法!
+        function creatCompare(propertyName) {
+          return function (obj1,obj2) {
+              var value1=obj1[propertyName];
+              var value2=obj2[propertyName];
+              //console.log(obj1)
+              if(value1<value2){
+                  return 1
+              }else if(value1>value2){
+                  return -1
+              }else {
+                  return 0
+              }
+          }
+      }
+        this.setData({
+          //后面的赋值是通过数组中的排序方法，原理有点懵
+          recommend:recommend.sort(creatCompare("saleNum"))
+        })
+        console.log(this.data.recommend);
+        //console.log(this.data.recommend.sort(creatCompare("saleNum")));
       }
     })
   },

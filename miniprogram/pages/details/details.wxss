@@ -81,3 +81,62 @@ page{
 .cell-item{
   margin-left: 12rpx;
 }
+.hotelOwner-content{
+  display: flex;
+  justify-content: space-around;
+}
+.hotelOwner-content-foods{
+  border-bottom: 4rpx solid #ffc158;
+  padding-bottom: 10rpx;
+}
+.choose{
+  margin-top:15rpx;
+  width: 100%;
+}
+
+.everyday-content-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 150rpx;
+  background-color: #fff;
+  margin-left: 34rpx;
+}
+.everyday-content-item-image image{
+  width: 128rpx;
+  height: 124rpx;
+}
+.everyday-content-item-intro{
+  margin-left: 40rpx;
+}
+.everyday-content-item-bottom{
+  display: flex;
+  width: 385rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.everyday-content-item-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.everyday-content-item-address{
+  color: #d1d1d1;
+  font-size:26rpx;
+}
+.price{
+  color: red;
+  font-size: 22px;
+}
+.everyday-content-item-sales{
+  color: #d1d1d1;
+  align-items: center;
+}
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #ffc158;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
